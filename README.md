@@ -7,14 +7,18 @@ Proyek ini bertujuan untuk menganalisis data dari E-Commerce Public Dataset. Tuj
 - `Proyek_Analisis_Data (2).ipynb`: File Jupyter Notebook ini digunakan untuk melakukan analisis data.
 
 # Setup Environment
-### 1.Buka terminal atau command prompt.
+### Clone repository ini ke komputer lokal Anda menggunakan perintah berikut:
+```
+git clone https://github.com/hanifraisss/Dicoding.git
+```
+### Buka terminal atau command prompt.
 
-### 2.Arahkan ke direktori proyek (pastikan kamu sudah berada di dalam folder tempat proyek atau file Python kamu berada). Misalnya, untuk masuk ke direktori tertentu, gunakan perintah:
+### Arahkan ke direktori proyek (pastikan kamu sudah berada di dalam folder tempat proyek atau file Python kamu berada). Misalnya, untuk masuk ke direktori tertentu, gunakan perintah:
 
 ```
 cd path/to/your/project/directory
 ```
-### 3.Buat environment virtual (opsional, jika kamu ingin menggunakan environment terisolasi):
+### Buat environment virtual (opsional, jika kamu ingin menggunakan environment terisolasi):
 
 ```
 python -m venv env
@@ -30,19 +34,24 @@ Setelah itu, aktifkan environment virtual:
 ```
 source env/bin/activate
 ```
-### 4.Install paket yang dibutuhkan dengan menggunakan pip:
+### Install paket yang dibutuhkan dengan menggunakan pip:
 ```
 pip install pandas matplotlib seaborn streamlit
 ```
-### 5.Verifikasi instalasi dengan menjalankan perintah untuk memeriksa apakah pustaka sudah terpasang dengan benar:
+### Verifikasi instalasi dengan menjalankan perintah untuk memeriksa apakah pustaka sudah terpasang dengan benar:
 ```
 pip show pandas matplotlib seaborn streamlit
 ```
 
 
 # Menjalankan Streamlit App
+#### Pastikan lokasi data file yang telah kamu clone sudah sesuai 
+#### Jika belum sesuai, datanya dapat di sesuaikan dengan lokasi yang anda simpan
+#### khususnya untuk load data pada app.py di line 7 yang berisi : file_path = "D:/Data Analyst/Project/Dicoding_Python/Dahboard/all_data.csv". dapat anda ubah sesuai tempat anda menyimpan filenya yang telah anda clone/unduh
+
+
 Untuk menjalankan dashboard, gunakan perintah berikut:
 ```bash
 cd dashboard
-streamlit run app.py.py
+streamlit run app.py
 ```
