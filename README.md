@@ -3,7 +3,7 @@ Proyek ini bertujuan untuk menganalisis data dari E-Commerce Public Dataset. Tuj
 
 # Struktur Direktori
 - `/data`: Direktori ini berisi data yang digunakan dalam proyek, dalam format .csv.
-- `/dashboard`: Direktori ini berisi file `app.py` yang digunakan untuk membangun dashboard hasil analisis data.
+- `/dashboard`: Direktori ini berisi file `app.py.py` yang digunakan untuk membangun dashboard hasil analisis data.
 - `Proyek_Analisis_Data (1).ipynb`: File Jupyter Notebook ini digunakan untuk melakukan analisis data.
 
 # Instalasi
@@ -15,24 +15,40 @@ pip install -r dashboard/requirements.txt
 ```
 
 # Setup Environment
-## Menggunakan Anaconda
-```bash
-conda create --name main-ds python=3.9
-conda activate main-ds
-pip install -r requirements.txt
-```
+## 1.Buka terminal atau command prompt.
 
-## Menggunakan Shell/Terminal
+## 2.Arahkan ke direktori proyek (pastikan kamu sudah berada di dalam folder tempat proyek atau file Python kamu berada). Misalnya, untuk masuk ke direktori tertentu, gunakan perintah:
+
 ```bash
-mkdir proyek_analisis_data
-cd proyek_analisis_data
-pipenv install
-pipenv shell
-pip install -r requirements.txt
+cd path/to/your/project/directory
+## 3.Buat environment virtual (opsional, jika kamu ingin menggunakan environment terisolasi):
+
+```bash
+python -m venv env
+
+Setelah itu, aktifkan environment virtual:
+
+Untuk Windows:
+```bash
+.\env\Scripts\activate
+```
+Untuk macOS/Linux:
+```bash
+source env/bin/activate
+```
+## 4.Install paket yang dibutuhkan dengan menggunakan pip:
+```bash
+pip install pandas matplotlib seaborn streamlit
+```
+## 5.Verifikasi instalasi dengan menjalankan perintah untuk memeriksa apakah pustaka sudah terpasang dengan benar:
+```bash
+pip show pandas matplotlib seaborn streamlit
+```
 ```
 
 # Menjalankan Streamlit App
 Untuk menjalankan dashboard, gunakan perintah berikut:
 ```bash
-streamlit run dashboard.py
+cd dicoding/dashboard/
+streamlit run app.py.py
 ```
