@@ -43,6 +43,6 @@ pip show pandas matplotlib seaborn streamlit
 # Menjalankan Streamlit App
 Untuk menjalankan dashboard, gunakan perintah berikut:
 ```bash
-cd dicoding/dashboard/
+cd dashboard
 streamlit run app.py.py
 ```
