@@ -6,14 +6,6 @@ Proyek ini bertujuan untuk menganalisis data dari E-Commerce Public Dataset. Tuj
 - `/dashboard`: Direktori ini berisi file `app.py.py` yang digunakan untuk membangun dashboard hasil analisis data.
 - `Proyek_Analisis_Data (2).ipynb`: File Jupyter Notebook ini digunakan untuk melakukan analisis data.
 
-# Instalasi
-Setelah mengunduh file `Dicoding_Python`, pastikan Anda memiliki lingkungan Python yang sesuai dan pustaka yang diperlukan. Anda dapat menginstal pustaka-pustaka yang diperlukan dengan menjalankan perintah berikut:
-
-```
-pip install streamlit
-pip install -r dashboard/requirements.txt
-```
-
 # Setup Environment
 ### 1.Buka terminal atau command prompt.
 
